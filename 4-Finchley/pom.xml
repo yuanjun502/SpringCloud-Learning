@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.didispace</groupId>
+    <artifactId>spring-cloud-finchley</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0</version>
+
+    <modules>
+        <!-- 消费自己的消息 -->
+        <module>stream-consumer-self</module>
+        <!-- 消息重试 -->
+        <module>stream-exception-handler-1</module>
+        <!-- 自定义错误处理逻辑 -->
+        <module>stream-exception-handler-2</module>
+        <!-- 使用DLQ队列（RabbitMQ） -->
+        <module>stream-exception-handler-3</module>
+        <!-- 重入队列（RabbitMQ） -->
+        <module>stream-exception-handler-4</module>
+
+        <!-- @StreamListener根据内容路由 -->
+        <module>stream-content-route</module>
+
+    </modules>
+
+</project>
